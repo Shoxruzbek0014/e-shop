@@ -1,0 +1,30 @@
+composer create-project laravel/laravel eshop
+Schema::defaultStringLength(191);
+composer require laravel/ui
+php artisan ui:auth
+bootstrap ni o'rnatish
+php artisan migrate
+
+
+role_as qowiw va AdminController ni yaratish
+Autoheratsion
+#https://www.fundaofwebit.com/laravel-5-8/how-to-make-login-and-register-in-laravel-5-8-using-auth-command
+middleware yaratamiz-AdminMiddleware va yozamiz
+Kernel.php ga yozamiz
+
+adminka o'rnatamiz
+
+Category table : php artisan make:migration create_catigories_table
+1.id
+2.name
+3.slug
+4.description
+5.status
+6.popular
+7.meta_title
+8.meta_description
+9.meta_keywords
+10.timestaps
+11.img
+php artisan migrate
+php artisan make:model Category
